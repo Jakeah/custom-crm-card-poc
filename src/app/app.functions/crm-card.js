@@ -51,7 +51,7 @@ exports.main = async (context = {}, sendResponse) => {
                 // Width and height of the iframe (in pixels)
                 width: 1200,
                 height: 800,
-                uri: 'https://app.hubspot.com/contact-timeline-embed/6137087/login?id=184551',
+                uri: 'https://app.hubspot.com/contact-timeline-embed/7640608/login?id=101',
               },
           },
             {
@@ -74,7 +74,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
           "type": "crm::objectProperty",
           "objectTypeId":"contact",
-          "objectId": 365, //Update the ID and Object to a relevant example
+          "objectId": 101, //Update the ID and Object to a relevant example
           "properties": [
            "firstname",
            "lastname",
@@ -127,37 +127,33 @@ exports.main = async (context = {}, sendResponse) => {
         },
         {
           "type": "crm::report",
-          "reportId": 92663532
+          "reportId": 70109412 
          },
          {
           "type": "crm::report",
-          "reportId": 92663861
-         },/*
+          "reportId": 70109415
+         },
          {
-          "type": "crm::report",
-          "reportId": 91454862
-         },*/
-        {
-            "type": "descriptionList",
-            "items": [
-              {
-                "label": "Recommended Promotion",
-                "value": `abc-123 promotion \   
-                some new line \  
-                another new line`
-              },
-              {
-                "label": "Recommended Promotion",
-                "value": "asdf-456 promotion"
-              },
-              {
-                "label": "Recommended Promotion",
-                "value": {
-                  "type": "text",
-                  "format": "markdown",
-                  "text": "[View Promotion Details for promotion qwerty-456](https://app.hubspot.com/contacts/6137087/deal/10716194644)"
-                }
+          "type": "descriptionList",
+          "items": [
+            {
+              "label": "Recommended Promotion",
+              "value": `abc-123 promotion \   
+              some new line \  
+              another new line`
+            },
+            {
+              "label": "Recommended Promotion",
+              "value": "asdf-456 promotion"
+            },
+            {
+              "label": "Recommended Promotion",
+              "value": {
+                "type": "text",
+                "format": "markdown",
+                "text": "[View Promotion Details for promotion qwerty-456](https://app.hubspot.com/contacts/7640608/deal/8936256299)"
               }
+            }
             ]
           },
           {
@@ -168,7 +164,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             "type": "crm::propertyList",
             "objectTypeId": "tickets",
-            "objectId": "1392578585", //update ticket id
+            "objectId": "841400337", //update ticket id
             "properties": ["subject","hs_pipeline_stage","content"]
         },
         {
