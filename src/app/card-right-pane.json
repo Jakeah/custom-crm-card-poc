@@ -1,0 +1,18 @@
+{
+    "type": "crm-card",
+    "data": {
+      "title": "Primary Contact",
+      "location": "crm.record.sidebar",
+      "fetch": {
+        "targetFunction": "card-right-pane",
+        "objectTypes": [
+          {
+            "name": "deals",
+            "propertiesToSend": [
+              "hs_object_id"
+            ]
+          }
+        ]
+      }
+    }
+}

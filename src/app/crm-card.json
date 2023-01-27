@@ -1,0 +1,18 @@
+{
+    "type": "crm-card",
+    "data": {
+      "title": "Important Details",
+      "location": "crm.record.tab",
+      "fetch": {
+        "targetFunction": "crm-card",
+        "objectTypes": [
+          {
+            "name": "deals",
+            "propertiesToSend": [
+              "hs_object_id"
+            ]
+          }
+        ]
+      }
+    }
+  }
