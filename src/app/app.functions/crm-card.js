@@ -7,14 +7,14 @@ exports.main = async (context = {}, sendResponse) => {
         {
           type: 'text',
           format: 'markdown',
-          text: 'View relevant data about specific deals',
+          text: 'Take Action Relevant to this Ad Placement',
         },
         {
           "type": "buttonRow",
           "buttons": [
             {
               type: 'button',
-              text: 'View all deals',
+              text: 'View Contract Status',
               onClick: {
                 type: 'IFRAME',
                 // Width and height of the iframe (in pixels)
@@ -22,50 +22,29 @@ exports.main = async (context = {}, sendResponse) => {
                 height: 800,
                 uri: 'https://n.robertpainslie.com',
               },
-          },
-          {
-            type: 'button',
-            text: 'Open iframe to view all deals',
-            onClick: {
-              type: 'IFRAME',
-              // Width and height of the iframe (in pixels)
-              width: 1200,
-              height: 800,
-              uri: 'https://www.robertpainslie.com/deal-table',
             },
-          },
-          {
+            {
+              type: 'button',
+              text: 'View Aptus Status',
+              onClick: {
+                type: 'IFRAME',
+                // Width and height of the iframe (in pixels)
+                width: 1200,
+                height: 800,
+                uri: 'https://www.robertpainslie.com/deal-table',
+              },
+            },
+            {
               type: 'button',
               text: 'Associate most recent note with all associated contacts',
               onClick: {
-                  "type": "SERVERLESS_ACTION_HOOK",
-                  "serverlessFunction": "associate-engagements",
-                  "associatedObjectProperties": ["hs_object_id"]
-              },
-          },
-          {
-              type: 'button',
-              text: 'View Contact Embed',
-              onClick: {
-                type: 'IFRAME',
-                // Width and height of the iframe (in pixels)
+                type: "IFRAME",
                 width: 1200,
                 height: 800,
-                uri: 'https://app.hubspot.com/contact-timeline-embed/7640608/login?id=101',
-              },
-          },
-            {
-              type: 'button',
-              text: 'View embedded Google Sheet',
-              onClick: {
-                type: 'IFRAME',
-                // Width and height of the iframe (in pixels)
-                width: 1200,
-                height: 800,
-                uri: `https://docs.google.com/spreadsheets/d/1YGL_ae_NizHJfUeOVF7I60wIuC8v5GHFSBCYRDSXvGM/edit#gid=0?hs_object_id=${context.propertiesToSend.hs_object_id}`,
+                uri: 'https://www.google.com'
               },
             }
-          ]
+        ]
         },
         {
             "type": "divider",
