@@ -1,7 +1,7 @@
 {
     "type": "crm-card",
     "data": {
-      "title": "Oracle Info",
+      "title": "Prisma Info",
       "location": "crm.record.sidebar",
       "fetch": {
         "targetFunction": "card-right-pane",

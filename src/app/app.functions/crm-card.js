@@ -5,9 +5,9 @@ exports.main = async (context = {}, sendResponse) => {
     sendResponse({
       sections: [
         {
-          type: 'text',
+          type: 'heading',
           format: 'markdown',
-          text: 'ERP Verification',
+          text: 'ERP Status',
         },
         {
           "type": "statistics",
@@ -45,6 +45,39 @@ exports.main = async (context = {}, sendResponse) => {
               type: "button",
               text: "Send for verification",
               variant: "primary",
+              onClick: {
+                type: "IFRAME",
+                width: 1200,
+                height: 800,
+                uri: 'https://app.hubspot.com/reports-dashboard/7640608/view/4385664'
+              }
+            }
+          ]
+        },
+        {
+            "type": "divider",
+            "distance": "small"
+        },
+        {
+          type: "tile",
+          body: [
+            {
+              type: "heading",
+              text: "Ready To Publish?"
+            },
+            {
+              type: "text",
+              text: "No - Account Certification Under Review - Verfication Not Sent"
+            },
+            {
+              type: "text",
+              text: ""
+            },
+            {
+              type: "button",
+              text: "Publish Ad",
+              variant: "primary",
+              disabled: true,
               onClick: {
                 type: "IFRAME",
                 width: 1200,
