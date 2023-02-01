@@ -6,6 +6,10 @@
         "file": "crm-card.js",
         "secrets": ["PRIVATE_APP_ACCESS_TOKEN"]
       },
+      "crm-card-custom-tab": {
+        "file": "crm-card-custom-tab.js",
+        "secrets": ["PRIVATE_APP_ACCESS_TOKEN"]
+      },
       "associate-engagements": {
         "file": "associate-engagements.js",
         "secrets": ["PRIVATE_APP_ACCESS_TOKEN"]

@@ -19,6 +19,9 @@
             "file": "./crm-card.json"
           },
           {
+            "file": "./crm-card-custom-tab.json"
+          },
+          {
             "file": "./card-right-pane.json"
           }
         ]

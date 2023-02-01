@@ -8,25 +8,24 @@ exports.main = async (context = {}, sendResponse) => {
             {
                 "type": "image",
                 "src": "https://i.pinimg.com/236x/63/48/80/634880ebb53758d76b69d1f5bba350a7--prisma-software.jpg",
-                "width": 300,
-                "height": 150,
+                "width": 100,
                 "alt": "Prisma"
             },
               {
                 "type": "statistics",
                 "items": [
                   {
-                    "label": "Statistics example",
-                    "number": "347",
+                    "label": "Your Ads Queued",
+                    "number": "47",
                     "description": {
                       "type": "text",
                       "format": "markdown",
-                      "text": "[Learn more about this component](https://app.hubspot.com/l/docs/doc/platform/create-custom-crm-cards-with-projects#components)"
+                      "text": "[View More Here](https://app.hubspot.com/l/docs/doc/platform/create-custom-crm-cards-with-projects#components)"
                     }
                   },
                   {
-                    "label": "Bounce Rate",
-                    "number": "18.4%",
+                    "label": "Ads Ready for Placement this Week",
+                    "number": "3",
                     "description": {
                       "type": "trend",
                       "value": "2.25%",
@@ -34,11 +33,11 @@ exports.main = async (context = {}, sendResponse) => {
                     }
                   },
                   {
-                    "label": "Time Spent",
-                    "number": "64.2",
+                    "label": "Total Ads Placed this Month",
+                    "number": "52",
                     "description": {
                       "type": "trend",
-                      "value": "2.1 seconds",
+                      "value": "5.5 ads",
                       "direction": "increase"
                     }
                   }
